@@ -1,4 +1,4 @@
-#Hangman Game
+# Hangman Game
 A very simple, (somewhat incomplete) Hangman game built with HTML, CSS, and Javascript.
 I didn't focus too much on appearances or responsive design, as this project was mainly started to test my ability to build an interactive site with Javascript without following a tutorial.
 
