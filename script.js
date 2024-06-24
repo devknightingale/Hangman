@@ -15,7 +15,6 @@ function loseLife() {
     var descendants = ancestor.getElementsByTagName("div"); 
 
     var life = document.getElementById(livesArr[currentLives]); 
-    console.log(`lives is referencing const arr livesArr = ${livesArr[currentLives]}`);
     life.style.visibility = "hidden";  
     currentLives -= 1; 
 }
@@ -123,7 +122,7 @@ function reset() {
 
     // // reset life hearts 
     resetHearts(); 
-    // need to append 3 divs to 
+    
 }
 
 function resetHearts() { 
