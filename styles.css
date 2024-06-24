@@ -1,0 +1,163 @@
+* { 
+    box-sizing: border-box;
+}
+body { 
+    margin: 0; 
+    background-color: darkblue; 
+}
+
+
+/* MOBILE STUFF */ 
+
+@media screen and (max-width: 425px) {
+    .test-section { 
+        background-color: red; 
+        width: 100%; 
+    }
+    .hangman-tiles-container { 
+        width: 100%; 
+        height: 20vh; 
+        display: flex; 
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        column-gap: 10px;
+        row-gap: 10px; 
+        justify-content: center; 
+        align-content: center; 
+        background-color: green; 
+        
+    }
+    
+  }
+
+.lives-container { 
+    display: flex; 
+    flex-direction: row; 
+    column-gap: 6px; 
+    width: 5%; 
+    height: 8vh; 
+    position: absolute; 
+    right: 5%; 
+    /* background-color: red;  */
+    justify-content: center; 
+    align-items: center; 
+}
+
+.lives { 
+    color: pink; 
+    width: 50%; 
+    display: flex; 
+    text-align: center;
+    opacity: 1; /* sets opacity to full */
+}
+
+.lives-used { 
+    color: pink; 
+    width: 50%; 
+    display: flex; 
+    text-align: center;
+    opacity: 0.5; /* sets opacity to half */
+}
+
+.show { 
+    display: visible; 
+}
+
+.hide { 
+    display: none; 
+}
+
+.hangman-tiles-container { 
+    margin: 2%  auto; 
+    width: 50%; 
+    height: 30vh; 
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    column-gap: 10px;
+    row-gap: 10px; 
+    justify-content: center; 
+    align-content: center; 
+    
+}
+.hangman-tiles { /* This class will swap with the hangman-tiles-correct class when a letter is guessed correctly. */
+    height: 10vh; 
+    width: 5vw; 
+    min-width: 40px; 
+    min-height: 40px;
+    background-color: blue; 
+    border-radius: 30px; 
+    opacity: 0.4; /* sets opacity of non-guessed letter tiles to be semi-transparent. */ 
+}
+
+.hangman-tiles-correct { /* This class is used to make the correctly guessed hangman tiles have full opacity.*/ 
+    height: 10vh; 
+    width: 5vw; 
+    min-width: 40px; 
+    min-height: 40px;
+    background-color: blue; 
+    color: white;
+    border-radius: 30px; 
+    opacity: 1.0; /* sets opacity of correct letter tiles to full */
+}
+
+.hangman-letters { /* This class will swap with the hangman-letters-correct class when a letter is guessed correctly. */
+    font-family: "Acme", sans-serif; 
+    font-size: 30px; 
+    text-align: center;  
+    display: none; /* hides letters */
+}
+
+.hangman-letters-correct { /* This class is used to make the correct guess appear. */
+    font-family: "Acme", sans-serif; ; 
+    font-size: 30px; 
+    text-align: center; 
+    display: visible; /* shows letters */
+}
+
+.guess-container { 
+    margin: auto; 
+    width: 60%; 
+    height: 30vh; 
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    column-gap: 10px; 
+    row-gap: 10px; 
+    justify-content: center; 
+  
+}
+
+.guess-letter-tiles { 
+    width: 10vh; 
+    height: 5vw; 
+    min-width: 40px; 
+    min-height: 40px;
+    align-content: center; 
+    text-align: center; 
+    background-color: white;
+    border-radius: 20px; 
+    cursor: pointer; 
+    font-family: Acme, sans-serif;  
+    font-size: 30px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+.guessed-letter-tiles { 
+    width: 10vh; 
+    height: 5vw; 
+    min-width: 40px; 
+    min-height: 40px; 
+    align-content: center; 
+    text-align: center; 
+    background-color: white;
+    border-radius: 20px; 
+    cursor: pointer; 
+    font-family: Acme, sans-serif;  
+    font-size: 30px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    opacity: 0.5; 
+}

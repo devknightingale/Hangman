@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css">
+
+        <!-- FONT IMPORT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+        <!-- FONT AWESOME HEART ICON -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body onload="reset()">
+
+        <main>
+            <section class="test-section">
+                <div class ="hangman-tiles-container" id="hangman-tiles-container">
+
+                </div>
+            </section>
+            <section> <!-- Perhaps change this to JS/dynamic lives amount based on selected difficulty. Ex 3 for Hard, 5 for Medium, 7 for Easy -->
+                <div class="lives-container" id="lives-container">
+                    <div class="show"><i class="fa fa-heart lives fa-2x" id="lifeone"></i></div>
+                    <div class="show"><i class="fa fa-heart lives fa-2x" id="lifetwo"></i></div>
+                    <div class="show"><i class="fa fa-heart lives fa-2x" id="lifethree"></i></div>
+                </div>
+            </section>
+            
+            <section class="guess-letters">
+                <div class="guess-container" id="guess-container">
+                    <div class="guess-letter-tiles" id="letterA" onclick="getLetterGuess(this.id)">
+                        <div>A</div>
+                    </div>
+                    <div class="guess-letter-tiles" id="letterB" onclick="getLetterGuess(this.id)">
+                        <p>B</p>
+                    </div>
+                    <div class="guess-letter-tiles" id="letterC" onclick="getLetterGuess(this.id)">
+                        <p>C</p>
+                    </div>
+                    <div class="guess-letter-tiles" id="letterD" onclick="getLetterGuess(this.id)">
+                        <p>D</p>
+                    </div>
+                    <div class="guess-letter-tiles" id="letterE" onclick="getLetterGuess(this.id)">
+                        <p>E</p>
+                    </div>
+                    <div class="guess-letter-tiles" id="letterF" onclick="getLetterGuess(this.id)">
+                        <p>F</p>
+                    </div>
+                    <div class="guess-letter-tiles" id="letterG" onclick="getLetterGuess(this.id)">
+                        <p>G</p>
+                    </div>
+                    <div class="guess-letter-tiles" id="letterH" onclick="getLetterGuess(this.id)">
+                        <p>H</p>
+                    </div>
+                    <div class="guess-letter-tiles" id="letterI" onclick="getLetterGuess(this.id)">
+                        <p>I</p>
+                    </div>
+                    <div class="guess-letter-tiles" id="letterJ" onclick="getLetterGuess(this.id)">
+                        <p>J</p>
+                    </div>
+                    <div class="guess-letter-tiles" id="letterK" onclick="getLetterGuess(this.id)">
+                        <p>K</p>
+                    </div>
+                    <div class="guess-letter-tiles" id="letterL" onclick="getLetterGuess(this.id)">
+                        <p>L</p>
+                    </div>
+                    <div class="guess-letter-tiles" id="letterM" onclick="getLetterGuess(this.id)">
+                        <p>M</p>
+                    </div>
+                    <div class="guess-letter-tiles" id="letterN" onclick="getLetterGuess(this.id)">
+                        <p>N</p>
+                    </div>
+                    <div class="guess-letter-tiles" id="letterO" onclick="getLetterGuess(this.id)">
+                        <p>O</p>
+                    </div>
+                    <div class="guess-letter-tiles" id="letterP" onclick="getLetterGuess(this.id)">
+                        <p>P</p>
+                    </div>
+                    <div class="guess-letter-tiles" id="letterQ" onclick="getLetterGuess(this.id)">
+                        <p>Q</p>
+                    </div>
+                    <div class="guess-letter-tiles" id="letterR" onclick="getLetterGuess(this.id)">
+                        <p>R</p>
+                    </div>
+                    <div class="guess-letter-tiles" id="letterS" onclick="getLetterGuess(this.id)">
+                        <p>S</p>
+                    </div>
+                    <div class="guess-letter-tiles" id="letterT" onclick="getLetterGuess(this.id)">
+                        <p>T</p>
+                    </div>
+                    <div class="guess-letter-tiles" id="letterU" onclick="getLetterGuess(this.id)">
+                        <p>U</p>
+                    </div>
+                    <div class="guess-letter-tiles" id="letterV" onclick="getLetterGuess(this.id)">
+                        <p>V</p>
+                    </div>
+                    <div class="guess-letter-tiles" id="letterW" onclick="getLetterGuess(this.id)">
+                        <p>W</p>
+                    </div>
+                    <div class="guess-letter-tiles" id="letterX" onclick="getLetterGuess(this.id)">
+                        <p>X</p>
+                    </div>
+                    <div class="guess-letter-tiles" id="letterY" onclick="getLetterGuess(this.id)">
+                        <p>Y</p>
+                    </div>
+                    <div class="guess-letter-tiles" id="letterZ" onclick="getLetterGuess(this.id)">
+                        <p>Z</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <button onclick="newWord()">Get new word</button>
+        <button onclick="reset()">Test Reset Function</button>
+        <script src="./script.js" async defer></script>
+    </body>
+</html>
