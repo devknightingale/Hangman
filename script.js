@@ -129,7 +129,6 @@ function resetHearts() {
     
     for (let i = 0; i < livesArr.length; i++) { 
         var element = document.getElementById(livesArr[i]);
-        console.log(`i is ${i}. constArr is at ${livesArr[i]}`);
         element.style.visibility = "visible"; 
     }
 }
